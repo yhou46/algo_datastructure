@@ -210,3 +210,9 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+#--------------------------------------
+# Self change
+#--------------------------------------
+# ignore xcode project files
+build_xcode/

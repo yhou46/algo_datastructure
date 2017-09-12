@@ -1,6 +1,6 @@
-Used for basic algorithms and data structures
+# Used for basic algorithms and data structures
 
-# How to use
+## How to use
 1. cd to repo
 2. "mkdir build"
 3. "cd build"
