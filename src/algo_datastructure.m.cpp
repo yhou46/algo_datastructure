@@ -39,20 +39,25 @@ int main(int argc, const char * argv[])
 //    std::cout << bit.getRangeSum(3, 3) << "\n";
     
     // Test for bit2D
-    std::vector< std::vector<int> > input =
-    {
-        {3,0,1,4,2},
-        {5,6,3,2,1},
-        {1,2,0,1,5},
-        {4,1,0,1,7},
-        {1,0,3,0,5}
-    };
+//    std::vector< std::vector<int> > input =
+//    {
+//        {3,0,1,4,2},
+//        {5,6,3,2,1},
+//        {1,2,0,1,5},
+//        {4,1,0,1,7},
+//        {1,0,3,0,5}
+//    };
+//    
+//    BinaryIndexTree2D bit2D(input);
+//    std::cout << bit2D;
+//    
+//    std::cout << "Total sum: " << bit2D.getTotalSum(2, 2) << "\n";
+//    std::cout << "Region sum: " << bit2D.getRegionSum(1, 1, 2, 2) << "\n";
     
-    BinaryIndexTree2D bit2D(input);
-    std::cout << bit2D;
+    std::string str1("35");
+    std::string str2("3");
     
-    std::cout << "Total sum: " << bit2D.getTotalSum(2, 2) << "\n";
-    std::cout << "Region sum: " << bit2D.getRegionSum(1, 1, 2, 2) << "\n";
+    std::cout << (str1 < str2);
     
     
     return 0;
