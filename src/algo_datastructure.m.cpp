@@ -3,11 +3,13 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <regex>
 
 // Self lib
 #include "algo_sort.h"
 #include "datastructure_linkedlist.h"
 #include "datastructure_binary_index_tree.h"
+#include "algo_string_enhance.h"
 
 using namespace algo;
 using namespace datastructure;
@@ -54,11 +56,21 @@ int main(int argc, const char * argv[])
 //    std::cout << "Total sum: " << bit2D.getTotalSum(2, 2) << "\n";
 //    std::cout << "Region sum: " << bit2D.getRegionSum(1, 1, 2, 2) << "\n";
     
-    std::string str1("35");
-    std::string str2("3");
+    // Test for split string
+    std::string inputString("aaaaaa");
+    std::string pattern("aa");
+    std::vector<int> lpsTable;
     
-    std::cout << (str1 < str2);
+    std::vector<int> result;
+    string_enhance::findMatchKMP(inputString, pattern, result);
     
+    std::cout << "input:  [" << inputString << "\n";
+    std::cout << "pattern:[" << pattern << "\n";
+    for( auto i: result )
+    {
+        std::cout << i << ",";
+    }
+    std::cout << std::endl;
     
     return 0;
 }
