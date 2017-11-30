@@ -5,13 +5,12 @@
 //  Created by Yunpeng Hou on 9/11/17.
 //
 //
-#include <vector>
-#include <iostream>
-#include <memory>
-
 #ifndef datastructure_linkedlist_h
 #define datastructure_linkedlist_h
 
+#include <vector>
+#include <iostream>
+#include <memory>
 
 namespace datastructure
 {

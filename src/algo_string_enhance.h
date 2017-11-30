@@ -4,11 +4,14 @@
 //
 //  Created by Yunpeng Hou on 10/3/17.
 //
-#include <string>
-#include <vector>
+
 
 #ifndef algo_string_enhance_h
 #define algo_string_enhance_h
+
+#include <string>
+#include <vector>
+
 namespace algo
 {
 namespace string_enhance

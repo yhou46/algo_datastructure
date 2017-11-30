@@ -5,12 +5,10 @@
 //  Created by Yunpeng Hou on 9/16/17.
 //
 //
-
-#include <vector>
-
-
 #ifndef datastructure_binary_index_tree_h
 #define datastructure_binary_index_tree_h
+
+#include <vector>
 
 namespace datastructure {
 

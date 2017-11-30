@@ -57,21 +57,14 @@ int main(int argc, const char * argv[])
 //    std::cout << "Total sum: " << bit2D.getTotalSum(2, 2) << "\n";
 //    std::cout << "Region sum: " << bit2D.getRegionSum(1, 1, 2, 2) << "\n";
     
-    // Test for split string
-    std::string inputString("aaaaaa");
-    std::string pattern("aa");
-    std::vector<int> lpsTable;
+    BinaryTreeNode root(1);
     
-    std::vector<int> result;
-    string_enhance::findMatchKMP(inputString, pattern, result);
+    root.d_left = std::unique_ptr<BinaryTreeNode>(new BinaryTreeNode(2));
+    root.d_right = std::unique_ptr<BinaryTreeNode>(new BinaryTreeNode(3));
     
-    std::cout << "input:  [" << inputString << "\n";
-    std::cout << "pattern:[" << pattern << "\n";
-    for( auto i: result )
-    {
-        std::cout << i << ",";
-    }
-    std::cout << std::endl;
+    dfs(&root);
+    
+    
     
     return 0;
 }

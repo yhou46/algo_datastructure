@@ -1,3 +1,5 @@
+#ifndef algo_sort_h
+#define algo_sort_h
 
 // std lib
 #include <iostream>
@@ -6,9 +8,6 @@
 
 // self lib
 #include "datastructure_linkedlist.h"
-
-#ifndef algo_sort_h
-#define algo_sort_h
 
 namespace algo
 {
