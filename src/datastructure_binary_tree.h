@@ -1,10 +1,11 @@
 #include <iostream>
 #include <vector>
+#include <memory>
 
-class TreeNode
+class BinaryTreeNode
 {
 public:
-	TreeNode(): d_val(0), d_left(nullptr), d_right(nullptr)
+	BinaryTreeNode(): d_val(0), d_left(nullptr), d_right(nullptr)
 	{}
 
 	int d_val;

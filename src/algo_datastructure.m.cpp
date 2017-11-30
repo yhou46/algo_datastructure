@@ -10,6 +10,7 @@
 #include "datastructure_linkedlist.h"
 #include "datastructure_binary_index_tree.h"
 #include "algo_string_enhance.h"
+#include "datastructure_binary_tree.h"
 
 using namespace algo;
 using namespace datastructure;
