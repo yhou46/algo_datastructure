@@ -18,18 +18,18 @@ using namespace datastructure;
 int main(int argc, const char * argv[])
 {
     // Input for test case
-    // std::vector<int> input = {2,1,3,4,0};
+   	std::vector<int> input = {2,1,3,4,0};
     
-//    // Test sort algorithm
-//    // - Test quicksort
-//    // algo::sort::QuickSort::quickSort(input, 0, input.size());
-//    algo::sort::MergeSort::mergeSort(input, 0, input.size());
-//    
-//    for(auto begin = input.begin(); begin != input.end(); ++begin)
-//    {
-//        std::cout << *begin << ",";
-//    }
-//    std::cout << "\n";
+	// Test sort algorithm
+	// - Test quicksort
+	algo::sort::QuickSort::quickSort(input, 0, input.size());
+	// algo::sort::MergeSort::mergeSort(input, 0, input.size());
+
+	for(auto begin = input.begin(); begin != input.end(); ++begin)
+	{
+	   std::cout << *begin << ",";
+	}
+	std::cout << "\n";
     
 //    // Test for bit 1 D
 //    BinaryIndexTree bit(input);
@@ -57,12 +57,12 @@ int main(int argc, const char * argv[])
 //    std::cout << "Total sum: " << bit2D.getTotalSum(2, 2) << "\n";
 //    std::cout << "Region sum: " << bit2D.getRegionSum(1, 1, 2, 2) << "\n";
     
-    BinaryTreeNode root(1);
+    // BinaryTreeNode root(1);
     
-    root.d_left = std::unique_ptr<BinaryTreeNode>(new BinaryTreeNode(2));
-    root.d_right = std::unique_ptr<BinaryTreeNode>(new BinaryTreeNode(3));
+    // root.d_left = std::unique_ptr<BinaryTreeNode>(new BinaryTreeNode(2));
+    // root.d_right = std::unique_ptr<BinaryTreeNode>(new BinaryTreeNode(3));
     
-    dfs(&root);
+    // dfs(&root);
     
     
     
