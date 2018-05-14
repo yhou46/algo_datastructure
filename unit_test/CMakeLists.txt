@@ -57,10 +57,14 @@ set(EXECUTABLE_OUTPUT_PATH ${GoogleTestWorkPath}/bin)
 # Add all Executables
 include_directories (${CMAKE_SOURCE_DIR}/src)
 
+# algo test
 add_executable( algo_unit_test algo.t.cpp )
 target_link_libraries( algo_unit_test gtest_main algo_datastructure_lib)
-
 add_test(NAME algo_unit_test COMMAND algo_unit_test)
 
+# datastructure test
+add_executable( datastructure_unit_test datastructure.t.cpp )
+target_link_libraries( datastructure_unit_test gtest_main algo_datastructure_lib)
+add_test(NAME datastructure_unit_test COMMAND datastructure_unit_test)
 
 

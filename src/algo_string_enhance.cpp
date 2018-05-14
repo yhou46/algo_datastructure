@@ -8,6 +8,8 @@
 #include "algo_string_enhance.h"
 
 #include <regex>
+#include <sstream>
+#include <string>
 
 namespace algo
 {
@@ -18,6 +20,20 @@ namespace string_enhance
         std::regex regexExpression("\\s+");
         std::sregex_token_iterator tokenIter(inputString.begin(), inputString.end(), regexExpression,-1);
         std::vector<std::string> result(tokenIter, std::sregex_token_iterator());
+        return result;
+    }
+    
+    vector<string> splitBySpaces( const string& inputString )
+    {
+        std::stringstream ss(inputString);
+        
+        
+        vector<string> result;
+        std::string tempStr;
+        while( std::getline(ss, tempStr, ' ') )
+        {
+            result.push_back(tempStr);
+        }
         return result;
     }
     

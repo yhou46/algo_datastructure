@@ -27,6 +27,8 @@ namespace string_enhance
     // Split inputString by whitespace char (' ', '\t', ...)
     vector<string> split( const string& inputString );
     
+    vector<string> splitBySpaces( const string& inputString );
+    
     //--------------------------------
     // KMP string matching
     //--------------------------------

@@ -22,9 +22,40 @@ public:
 	std::unique_ptr<BinaryTreeNode> d_right;
 };
 
-    void dfs( BinaryTreeNode* root );
+void dfs( BinaryTreeNode* root );
 
-    // void bfs( BinaryTreeNode* root );
+// void bfs( BinaryTreeNode* root );
 
+void serialize( BinaryTreeNode* root, std::string& result );
+
+void deSerialize( BinaryTreeNode& root, const std::string& input );
+
+struct SimpleBinaryTreeNode
+{
+    SimpleBinaryTreeNode(): d_left(nullptr), d_right(nullptr), d_value(0)
+    {}
+    
+    SimpleBinaryTreeNode(int value): d_left(nullptr), d_right(nullptr), d_value(value)
+    {}
+    
+    ~SimpleBinaryTreeNode()
+    {
+        
+        if(d_left != nullptr)
+        {
+            delete d_left;
+        }
+        if(d_right != nullptr)
+        {
+            delete d_right;
+        }
+        
+    }
+    
+    SimpleBinaryTreeNode* d_left;
+    SimpleBinaryTreeNode* d_right;
+    int d_value;
+};
+    
 } // end namespace datastructure
 #endif

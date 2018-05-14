@@ -15,55 +15,38 @@
 using namespace algo;
 using namespace datastructure;
 
+BinaryTreeNode* test(int val)
+{
+    return std::unique_ptr<BinaryTreeNode>(new BinaryTreeNode(val)).get();
+}
+
 int main(int argc, const char * argv[])
 {
-    // Input for test case
-   	std::vector<int> input = {2,1,3,4,0};
-    
-	// Test sort algorithm
-	// - Test quicksort
-	algo::sort::QuickSort::quickSort(input, 0, input.size());
-	// algo::sort::MergeSort::mergeSort(input, 0, input.size());
-
-	for(auto begin = input.begin(); begin != input.end(); ++begin)
-	{
-	   std::cout << *begin << ",";
-	}
-	std::cout << "\n";
-    
-//    // Test for bit 1 D
-//    BinaryIndexTree bit(input);
-//    
-//    for( int i=0; i < input.size(); ++i )
-//    {
-//        std::cout << "input: " << i << ":" << input[i] << "\n";
-//    }
-//    std::cout << "\n";
-//    std::cout << bit.getRangeSum(3, 3) << "\n";
-    
-    // Test for bit2D
-//    std::vector< std::vector<int> > input =
-//    {
-//        {3,0,1,4,2},
-//        {5,6,3,2,1},
-//        {1,2,0,1,5},
-//        {4,1,0,1,7},
-//        {1,0,3,0,5}
-//    };
-//    
-//    BinaryIndexTree2D bit2D(input);
-//    std::cout << bit2D;
-//    
-//    std::cout << "Total sum: " << bit2D.getTotalSum(2, 2) << "\n";
-//    std::cout << "Region sum: " << bit2D.getRegionSum(1, 1, 2, 2) << "\n";
-    
-    // BinaryTreeNode root(1);
-    
-    // root.d_left = std::unique_ptr<BinaryTreeNode>(new BinaryTreeNode(2));
-    // root.d_right = std::unique_ptr<BinaryTreeNode>(new BinaryTreeNode(3));
-    
-    // dfs(&root);
-    
+//    BinaryTreeNode root(2);
+//    root.d_left = std::unique_ptr<BinaryTreeNode>(new BinaryTreeNode(1));
+//    root.d_right = std::unique_ptr<BinaryTreeNode>(new BinaryTreeNode(3));
+//
+//    root.d_left->d_right = std::unique_ptr<BinaryTreeNode>(new BinaryTreeNode(4));
+//
+//    std::string result;
+//
+//    serialize(&root, result);
+//    std::cout << result << "\n";
+//
+//    BinaryTreeNode root2;
+//
+//    deSerialize(root2, result);
+//
+//    std::string result2;
+//    serialize(&root2, result2);
+//    std::cout << "after serialize: " << result2 << "\n";
+    std::string input = " abc def c ";
+    std::vector<std::string> result = algo::string_enhance::splitBySpaces(input);
+    for(auto str: result)
+    {
+        std::cout << str << "\n";
+        
+    }
     
     
     return 0;
